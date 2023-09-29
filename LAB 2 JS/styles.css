@@ -1,0 +1,90 @@
+/* Resetting some default styles for consistency */
+body, h1, p, button {
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling the body */
+body {
+    font-family:  'Times New Roman', Times, serif;
+    font-weight: bolder;
+    background-color: #e4d7d7;
+    margin: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Styling the quiz container */
+.grid {
+    display: grid;
+    place-items: center;
+    height: 100%;
+}
+
+#quiz {
+    background-color: #d2536844;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+
+hr {
+    margin: 30px 0;
+    border: 0;
+    border-top: 1px solid #cccccc;
+}
+
+/* Styling the question */
+#question {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Styling the answer choice buttons */
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button {
+    background-color: #00eeff;
+    color: #fcf7f7;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #d9ff00;;
+}
+
+/* Styling the progress indicator */
+#progress {
+    font-size: 14px;
+    color: #777;
+    margin-top: 20px;
+}
+
+/* Styling the result page */
+#score {
+    font-size: 50px;
+    margin-top: 50px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 2000px) {
+    #quiz {
+        max-width: 100%;
+    }
+}
